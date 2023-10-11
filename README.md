@@ -29,6 +29,7 @@
 Mobile application for children which provides a chatbot based on GPT.
 #### Tech stack
 - React Native
+
 ## Personal Project
 ### [Web Mapia](https://github.com/rudeh1253/webmapia)
 #### Description
