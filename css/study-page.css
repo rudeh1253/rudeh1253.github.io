@@ -1,0 +1,23 @@
+.miro-icon {
+    height: auto;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #ffe066;
+}
+
+.curriculum-graph {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-title a {
+    color: #000;
+}
