@@ -46,243 +46,254 @@
                 </div>
             </div>
         </nav>
-        <header class="py-3">
-            <div class="container px-lg-5">
-                <div class="p-4 p-lg-5 bg-light rounded-3">
-                    <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">팀 프로젝트</h1>
-                        <div class="accordion accordion-flush"
-                            id="item-accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"
-                                    id="noon-heading">
-                                    <button class="accordion-button collapsed"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#noon-collapse"
-                                        aria-expanded="false"
-                                        aria-controls="noon-collapse">
-                                        NOON
-                                    </button>
-                                </h2>
-                                <div id="noon-collapse"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="noon-heading"
-                                    data-bs-parent="#item-accordion">
-                                    <div class="accordion-body">
-                                        <p class="fs-4">
-                                            건물, 장소를 기반으로 서로 소통하고
-                                            연결되는 소셜 네트워크 서비스
-                                        </p>
-                                        <a href="https://github.com/kuberMAPtes">
-                                            <img class="icon" src="assets/github-142-svgrepo-com.png">
-                                        </a>
-                                        <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
-                                        <p class="fs-6">
-                                            사용자가 건물을 등록하고, 등록한 건물을 소통의 장으로 만든다.
-                                            건물을 등록하고 소통함으로써
-                                            일상공간을 모델로 한 새로운 SNS를 만들고자 하였다.
-                                        </p>
-                                        <h2 class="fs-5">프로젝트 기간</h2>
-                                        <p class="fs-6">2024년 5월 ~ 2024년 7월 (분석 · 설계 5주 / 구현 4주)</p>
-                                        <h2 class="fs-5">개발환경</h2>
-                                        <ul>
-                                            <li class="fs-6">IntelliJ 및 VS Code에서 개발</li>
-                                            <li class="fs-6">백엔드 애플리케이션은 Java 기반 Spring Framework 적용</li>
-                                            <li class="fs-6">프론트엔드 애플리케이션은 JavaScript 기반 React를 적용</li>
-                                            <li class="fs-6">채팅 서버는 JavaScript 기반 Node.js + Express 적용</li>
-                                            <li class="fs-6">내장 톰캣을 사용해 REST API 서버 배포</li>
-                                            <li class="fs-6">NGINX를 위에 웹 서버 배포</li>
-                                            <li class="fs-6">
-                                                컨테이너 환경에서 애플리케이션을 배포하며 Kubernetes를 사용해 컨테이너 관리
-                                            </li>
-                                        </ul>
-                                        <h2 class="fs-5">담당업무</h2>
-                                        <ul>
-                                            <li class="fs-6">팀장 직책</li>
-                                            <li class="fs-6">풀스택 개발</li>
-                                            <li class="fs-6">지도 시스템 구현</li>
-                                            <li class="fs-6">환경설정 시스템 구현</li>
-                                            <li class="fs-6">건물위키 시스템 구현</li>
-                                            <li class="fs-6">공통모듈 구현</li>
-                                            <li class="fs-6">Jenkins를 활용한 CI/CD Pipeline 구축</li>
-                                            <li class="fs-6">Spring Profile 활용</li>
-                                            <li class="fs-6 li-subitem">환경에 따라 다른 메타데이터 활용</li>
-                                            <li class="fs-6 li-subitem">환경에 따라 다른 Spring Bean 등록</li>
-                                            <li class="fs-6">Dockerfile 작성을 통한 웹 애플리케이션 컨테이너 이미지 등록</li>
-                                            <li class="fs-6">kubeadm을 통한 Kubernetes 클러스터 구축</li>
-                                            <li class="fs-6">
-                                                NAVER Certificate Manager를 통해 애플리케이션 로드밸런서에 SSL 인증서 등록
-                                            </li>
-                                            <li class="fs-6">NAVER CLOVA Chatbot을 통해 챗봇 구현</li>
-                                            <li class="fs-6">오토스케일링 시스템 구축</li>
-                                            <li class="fs-6 li-subitem">
-                                                서버 이미지와 Init Script를 활용해 Scale-Out된 서버
-                                                자동으로 Kubernetes 클러스터에 워커 노드로 등록
-                                            </li>
-                                            <li class="fs-6">
-                                                Horizontal Pod Autoscaling (HPA)를 활용한 Pod 오토스케일링
-                                            </li>
-                                            <li class="fs-6">
-                                                Ajax를 활용해 사용자 타이핑에
-                                                반응하여 검색 결과 미리 가져오기
-                                            </li>
-                                        </ul>
-                                        <h2 class="fs-5">구현한 공통모듈</h2>
-                                        <ul>
-                                            <li class="fs-6">
-                                                Spring Security 기반 인증 · 인가 로직
-                                            </li>
-                                            <li class="fs-6 li-subitem">Security Filter</li>
-                                            <li class="fs-6 li-subitem">JWT 기반 토큰 인증</li>
-                                            <li class="fs-6 li-subitem">OAuth 2.0 기반 외부 로그인 토큰 인증</li>
-                                            <li class="fs-6 li-subitem">사용자의 권한에 따른 리소스 접근 제어</li>
-                                            <li class="fs-6">Java Reflection API를 활용한 Validator</li>
-                                            <li class="fs-6 li-subitem">Service Layer로부터 검증 로직 분리</li>
-                                        </ul>
+        <main class="py-3 bg-light">
+            <div class="px-lg-5">
+                <div class="p-4 p-lg-5 rounded-3">
+                    <div class="m-4 m-lg-5 main-container">
+                        <div>
+                            <h1 class="display-5 fw-bold">팀 프로젝트</h1>
+                            <div class="accordion accordion-flush"
+                                id="item-accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="noon-heading">
+                                        <button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#noon-collapse"
+                                            aria-expanded="false"
+                                            aria-controls="noon-collapse">
+                                            <div>
+                                                <h3 class="item-title">NOON</h3>
+                                                <p class="item-summary">
+                                                    건물, 장소를 기반으로 서로 소통하고
+                                                    연결되는 소셜 네트워크 서비스
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="noon-collapse"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="noon-heading"
+                                        data-bs-parent="#item-accordion">
+                                        <div class="accordion-body">
+                                            <a href="https://github.com/kuberMAPtes">
+                                                <img class="icon" src="assets/github-142-svgrepo-com.png">
+                                            </a>
+                                            <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
+                                            <p class="fs-6">
+                                                사용자가 건물을 등록하고, 등록한 건물을 소통의 장으로 만든다.
+                                                건물을 등록하고 소통함으로써
+                                                일상공간을 모델로 한 새로운 SNS를 만들고자 하였다.
+                                            </p>
+                                            <h2 class="fs-5">프로젝트 기간</h2>
+                                            <p class="fs-6">2024년 5월 ~ 2024년 7월 (분석 · 설계 5주 / 구현 4주)</p>
+                                            <h2 class="fs-5">개발환경</h2>
+                                            <ul>
+                                                <li class="fs-6">IntelliJ 및 VS Code에서 개발</li>
+                                                <li class="fs-6">백엔드 애플리케이션은 Java 기반 Spring Framework 적용</li>
+                                                <li class="fs-6">프론트엔드 애플리케이션은 JavaScript 기반 React를 적용</li>
+                                                <li class="fs-6">채팅 서버는 JavaScript 기반 Node.js + Express 적용</li>
+                                                <li class="fs-6">내장 톰캣을 사용해 REST API 서버 배포</li>
+                                                <li class="fs-6">NGINX를 위에 웹 서버 배포</li>
+                                                <li class="fs-6">
+                                                    컨테이너 환경에서 애플리케이션을 배포하며 Kubernetes를 사용해 컨테이너 관리
+                                                </li>
+                                            </ul>
+                                            <h2 class="fs-5">담당업무</h2>
+                                            <ul>
+                                                <li class="fs-6">팀장 직책</li>
+                                                <li class="fs-6">풀스택 개발</li>
+                                                <li class="fs-6">지도 시스템 구현</li>
+                                                <li class="fs-6">환경설정 시스템 구현</li>
+                                                <li class="fs-6">건물위키 시스템 구현</li>
+                                                <li class="fs-6">공통모듈 구현</li>
+                                                <li class="fs-6">Jenkins를 활용한 CI/CD Pipeline 구축</li>
+                                                <li class="fs-6">Spring Profile 활용</li>
+                                                <li class="fs-6 li-subitem">환경에 따라 다른 메타데이터 활용</li>
+                                                <li class="fs-6 li-subitem">환경에 따라 다른 Spring Bean 등록</li>
+                                                <li class="fs-6">Dockerfile 작성을 통한 웹 애플리케이션 컨테이너 이미지 등록</li>
+                                                <li class="fs-6">kubeadm을 통한 Kubernetes 클러스터 구축</li>
+                                                <li class="fs-6">
+                                                    NAVER Certificate Manager를 통해 애플리케이션 로드밸런서에 SSL 인증서 등록
+                                                </li>
+                                                <li class="fs-6">NAVER CLOVA Chatbot을 통해 챗봇 구현</li>
+                                                <li class="fs-6">오토스케일링 시스템 구축</li>
+                                                <li class="fs-6 li-subitem">
+                                                    서버 이미지와 Init Script를 활용해 Scale-Out된 서버
+                                                    자동으로 Kubernetes 클러스터에 워커 노드로 등록
+                                                </li>
+                                                <li class="fs-6">
+                                                    Horizontal Pod Autoscaling (HPA)를 활용한 Pod 오토스케일링
+                                                </li>
+                                                <li class="fs-6">
+                                                    Ajax를 활용해 사용자 타이핑에
+                                                    반응하여 검색 결과 미리 가져오기
+                                                </li>
+                                            </ul>
+                                            <h2 class="fs-5">구현한 공통모듈</h2>
+                                            <ul>
+                                                <li class="fs-6">
+                                                    Spring Security 기반 인증 · 인가 로직
+                                                </li>
+                                                <li class="fs-6 li-subitem">Security Filter</li>
+                                                <li class="fs-6 li-subitem">JWT 기반 토큰 인증</li>
+                                                <li class="fs-6 li-subitem">OAuth 2.0 기반 외부 로그인 토큰 인증</li>
+                                                <li class="fs-6 li-subitem">사용자의 권한에 따른 리소스 접근 제어</li>
+                                                <li class="fs-6">Java Reflection API를 활용한 Validator</li>
+                                                <li class="fs-6 li-subitem">Service Layer로부터 검증 로직 분리</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"
-                                    id="ihangbot-heading">
-                                    <button class="accordion-button collapsed"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#ihangbot-collapse"
-                                        aria-expanded="false"
-                                        aria-controls="ihangbot-collapse">
-                                        아이행봇해
-                                    </button>
-                                </h2>
-                                <div id="ihangbot-collapse"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="ihangbot-heading"
-                                    data-bs-parent="#item-accordion">
-                                    <div class="accordion-body">
-                                        <p class="fs-4">
-                                            생성형 AI 기반 아이 케어 서비스
-                                        </p>
-                                        <a href="https://github.com/gyueunnim/iHangbot-front">
-                                            <img class="icon" src="assets/github-142-svgrepo-com.png">
-                                        </a>
-                                        <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
-                                        <p class="fs-6">
-                                            부모가 아이를 케어하기 힘든 맞벌이 가정에서 AI가 부모 대신 아이와 대화를
-                                            함으로써 아이를 케어하는 서비스이다. 아이와 AI는 음성으로 이야기를 주고받으면서
-                                            AI는 아이의 친구가 되어 준다.
-                                        </p>
-                                        <h2 class="fs-5">프로젝트 기간</h2>
-                                        <p class="fs-6">2023년 5월 ~ 2023년 7월</p>
-                                        <h2 class="fs-5">개발환경</h2>
-                                        <ul>
-                                            <li class="fs-6">VS Code에서 개발</li>
-                                            <li class="fs-6">JavaScript 기반 React Native</li>
-                                        </ul>
-                                        <h2 class="fs-5">담당업무</h2>
-                                        <ul>
-                                            <li class="fs-6">프론트엔드 개발</li>
-                                            <li class="fs-6">STT, TTS API 호출</li>
-                                        </ul>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="ihangbot-heading">
+                                        <button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#ihangbot-collapse"
+                                            aria-expanded="false"
+                                            aria-controls="ihangbot-collapse">
+                                            <div>
+                                                <h3 class="item-title">아이행봇해</h3>
+                                                <p class="item-summary">
+                                                    생성형 AI 기반 아이 케어 서비스
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="ihangbot-collapse"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="ihangbot-heading"
+                                        data-bs-parent="#item-accordion">
+                                        <div class="accordion-body">
+                                            <a href="https://github.com/gyueunnim/iHangbot-front">
+                                                <img class="icon" src="assets/github-142-svgrepo-com.png">
+                                            </a>
+                                            <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
+                                            <p class="fs-6">
+                                                부모가 아이를 케어하기 힘든 맞벌이 가정에서 AI가 부모 대신 아이와 대화를
+                                                함으로써 아이를 케어하는 서비스이다. 아이와 AI는 음성으로 이야기를 주고받으면서
+                                                AI는 아이의 친구가 되어 준다.
+                                            </p>
+                                            <h2 class="fs-5">프로젝트 기간</h2>
+                                            <p class="fs-6">2023년 5월 ~ 2023년 7월</p>
+                                            <h2 class="fs-5">개발환경</h2>
+                                            <ul>
+                                                <li class="fs-6">VS Code에서 개발</li>
+                                                <li class="fs-6">JavaScript 기반 React Native</li>
+                                            </ul>
+                                            <h2 class="fs-5">담당업무</h2>
+                                            <ul>
+                                                <li class="fs-6">프론트엔드 개발</li>
+                                                <li class="fs-6">STT, TTS API 호출</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <h1 class="display-5 fw-bold">개인 프로젝트</h1>
-                        <div class="accordion accordion-flush"
-                            id="item-accordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"
-                                    id="webmapia-heading">
-                                    <button class="accordion-button collapsed"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#webmapia-collapse"
-                                        aria-expanded="false"
-                                        aria-controls="webmapia-collapse">
-                                        웹 마피아
-                                    </button>
-                                </h2>
-                                <div id="webmapia-collapse"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="webmapia-heading"
-                                    data-bs-parent="#item-accordion">
-                                    <div class="accordion-body">
-                                        <p class="fs-4">
-                                            웹 기반 마피아 게임
-                                        </p>
-                                        <a href="https://github.com/rudeh1253/webmapia">
-                                            <img class="icon" src="assets/github-142-svgrepo-com.png">
-                                        </a>
-                                        <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
-                                        <p class="fs-6">
-                                            과거 서비스했으나 현재는 서비스 종료한 웹 마피아 게임을 직접 구현.
-                                            <a href="https://namu.wiki/w/%EC%9B%B9%EB%A7%88%ED%94%BC%EC%95%84">이 문서</a>를 보면서 구현했다.
-                                            채팅을 통해 진행되는 마피아 게임이다.
-                                        </p>
-                                        <h2 class="fs-5">프로젝트 기간</h2>
-                                        <p class="fs-6">2023년 6월 ~ 2023년 10월 / 2024년 7월 ~ (레거시 코드 리팩토링)</p>
-                                        <h2 class="fs-5">개발환경</h2>
-                                        <ul>
-                                            <li class="fs-6">IntelliJ 및 VS Code에서 개발</li>
-                                            <li class="fs-6">백엔드 애플리케이션은 Java 기반 Spring Framework 적용</li>
-                                            <li class="fs-6">프론트엔드 애플리케이션은 JavaScript 기반 React를 적용</li>
-                                            <li class="fs-6">내장 톰캣을 사용해 REST API 서버 배포</li>
-                                            <li class="fs-6">NGINX를 위에 웹 서버 배포</li>
-                                        </ul>
-                                        <h2 class="fs-5">담당업무</h2>
-                                        <ul>
-                                            <li class="fs-6">풀스택 개발</li>
-                                            <li class="fs-6">Spring MVC로 REST API 구현</li>
-                                            <li class="fs-6">Spring WebSocket을 활용해 STOMP 기반 WebSocket 통신 구현</li>
-                                        </ul>
+                        <div>
+                            <h1 class="display-5 fw-bold">개인 프로젝트</h1>
+                            <div class="accordion accordion-flush"
+                                id="item-accordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="webmapia-heading">
+                                        <button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#webmapia-collapse"
+                                            aria-expanded="false"
+                                            aria-controls="webmapia-collapse">
+                                            <div>
+                                                <h3 class="item-title">웹 마피아</h3>
+                                                <p class="item-summary">
+                                                    웹 기반 마피아 게임
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="webmapia-collapse"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="webmapia-heading"
+                                        data-bs-parent="#item-accordion">
+                                        <div class="accordion-body">
+                                            <a href="https://github.com/rudeh1253/webmapia">
+                                                <img class="icon" src="assets/github-142-svgrepo-com.png">
+                                            </a>
+                                            <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
+                                            <p class="fs-6">
+                                                과거 서비스했으나 현재는 서비스 종료한 웹 마피아 게임을 직접 구현.
+                                                <a href="https://namu.wiki/w/%EC%9B%B9%EB%A7%88%ED%94%BC%EC%95%84">이 문서</a>를 보면서 구현했다.
+                                                채팅을 통해 진행되는 마피아 게임이다.
+                                            </p>
+                                            <h2 class="fs-5">프로젝트 기간</h2>
+                                            <p class="fs-6">2023년 6월 ~ 2023년 10월 / 2024년 7월 ~ (레거시 코드 리팩토링)</p>
+                                            <h2 class="fs-5">개발환경</h2>
+                                            <ul>
+                                                <li class="fs-6">IntelliJ 및 VS Code에서 개발</li>
+                                                <li class="fs-6">백엔드 애플리케이션은 Java 기반 Spring Framework 적용</li>
+                                                <li class="fs-6">프론트엔드 애플리케이션은 JavaScript 기반 React를 적용</li>
+                                                <li class="fs-6">내장 톰캣을 사용해 REST API 서버 배포</li>
+                                                <li class="fs-6">NGINX를 위에 웹 서버 배포</li>
+                                            </ul>
+                                            <h2 class="fs-5">담당업무</h2>
+                                            <ul>
+                                                <li class="fs-6">풀스택 개발</li>
+                                                <li class="fs-6">Spring MVC로 REST API 구현</li>
+                                                <li class="fs-6">Spring WebSocket을 활용해 STOMP 기반 WebSocket 통신 구현</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"
-                                    id="javacrawler-heading">
-                                    <button class="accordion-button collapsed"
-                                        type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#javacrawler-collapse"
-                                        aria-expanded="false"
-                                        aria-controls="javacrawler-collapse">
-                                        Java Web Crawler
-                                    </button>
-                                </h2>
-                                <div id="javacrawler-collapse"
-                                    class="accordion-collapse collapse"
-                                    aria-labelledby="javacrawler-heading"
-                                    data-bs-parent="#item-accordion">
-                                    <div class="accordion-body">
-                                        <p class="fs-4">
-                                            Java로 구현한 웹 크롤러
-                                        </p>
-                                        <a href="https://github.com/rudeh1253/java-crawler-web">
-                                            <img class="icon" src="assets/github-142-svgrepo-com.png">
-                                        </a>
-                                        <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
-                                        <p class="fs-6">
-                                            상속을 통해 확장할 수 있는 웹 크롤러. JUnit을 제외하고는 Java API를 활용해
-                                            구현하였다. 라이브러리를 사용하는 클라이언트 코드에서는 특정 클래스를 상속하고
-                                            추상 메소드를 오버라이딩함으로써 웹 크롤러를 사용할 수 있다. 멀티쓰레드 환경에서
-                                            작동하는 확장성 있는 웹 크롤러를 Java를 통해 구현함으로써 HTTP 요청과 크롤러에 대해서
-                                            공부하고 실제로 유용한 애플리케이션을 개발하고자 했다.
-                                        </p>
-                                        <h2 class="fs-5">프로젝트 기간</h2>
-                                        <p class="fs-6">2022년 12월 ~ 2023년 1월</p>
-                                        <h2 class="fs-5">개발환경</h2>
-                                        <ul>
-                                            <li class="fs-6">IntelliJ에서 개발</li>
-                                            <li class="fs-6">Java</li>
-                                        </ul>
-                                        <h2 class="fs-5">담당업무</h2>
-                                        <ul>
-                                            <li class="fs-6">
-                                                <code>java.net.HttpURLConnection</code>을 통한 HTTP 요청
-                                            </li>
-                                            <li class="fs-6">
-                                                <code>java.util.concurrent.Executors</code>를 활용한 멀티쓰레드 기반 네트워킹 구현
-                                            </li>
-                                        </ul>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header"
+                                        id="javacrawler-heading">
+                                        <button class="accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#javacrawler-collapse"
+                                            aria-expanded="false"
+                                            aria-controls="javacrawler-collapse">
+                                            <div>
+                                                <h3 class="item-title">Java Web Crawler</h3>
+                                                <p class="item-summary">
+                                                    Java로 구현한 웹 크롤러
+                                                </p>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div id="javacrawler-collapse"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="javacrawler-heading"
+                                        data-bs-parent="#item-accordion">
+                                        <div class="accordion-body">
+                                            <a href="https://github.com/rudeh1253/java-crawler-web">
+                                                <img class="icon" src="assets/github-142-svgrepo-com.png">
+                                            </a>
+                                            <h2 class="fs-5">프로젝트 설명 (개발목표)</h2>
+                                            <p class="fs-6">
+                                                상속을 통해 확장할 수 있는 웹 크롤러. JUnit을 제외하고는 Java API를 활용해
+                                                구현하였다. 라이브러리를 사용하는 클라이언트 코드에서는 특정 클래스를 상속하고
+                                                추상 메소드를 오버라이딩함으로써 웹 크롤러를 사용할 수 있다. 멀티쓰레드 환경에서
+                                                작동하는 확장성 있는 웹 크롤러를 Java를 통해 구현함으로써 HTTP 요청과 크롤러에 대해서
+                                                공부하고 실제로 유용한 애플리케이션을 개발하고자 했다.
+                                            </p>
+                                            <h2 class="fs-5">프로젝트 기간</h2>
+                                            <p class="fs-6">2022년 12월 ~ 2023년 1월</p>
+                                            <h2 class="fs-5">개발환경</h2>
+                                            <ul>
+                                                <li class="fs-6">IntelliJ에서 개발</li>
+                                                <li class="fs-6">Java</li>
+                                            </ul>
+                                            <h2 class="fs-5">담당업무</h2>
+                                            <ul>
+                                                <li class="fs-6">
+                                                    <code>java.net.HttpURLConnection</code>을 통한 HTTP 요청
+                                                </li>
+                                                <li class="fs-6">
+                                                    <code>java.util.concurrent.Executors</code>를 활용한 멀티쓰레드 기반 네트워킹 구현
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -290,6 +301,6 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </main>
     </body>
 </html>
